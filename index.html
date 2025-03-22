@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estil.css">
+    <title>Redes Informáticas</title>
+</head>
+<body>
+    <header>
+        <h1>Redes Informáticas</h1>
+        <nav>
+            <ul>
+                <li><a href="#que-son-las-redes">¿Qué son las redes?</a></li>
+                <li><a href="#tipos-de-redes">Tipos de Redes</a></li>
+                <li><a href="#modelo-osi">Modelo OSI</a></li>
+                <li><a href="#iso">ISO</a></li>
+                <li><a href="#binarios">Binarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="que-son-las-redes">
+        <h2>¿Qué son las redes?</h2>
+        <p>En informática, una red (también llamada red informática o red de computadoras) es la interconexión de un número determinado de computadoras mediante dispositivos alámbricos o inalámbricos. A través de impulsos eléctricos, ondas electromagnéticas u otros medios físicos, estos envían y reciben información en forma de paquetes de datos.</p>
+        <p>Las redes permiten a los sistemas informáticos actuar de manera conjunta y organizada, compartir recursos y emitir y recibir mensajes, gracias a una serie de códigos y estándares que garantizan su correcta comunicación. A estos estándares de comunicación se los conoce como protocolos informáticos; el más común de ellos actualmente es el TCP/IP.</p>
+        <p>La aparición de las redes, a finales del siglo XX, revolucionó el modo de comprender la informática y abrió un nuevo campo dentro de esta disciplina para atender las necesidades de mejoría, seguridad y operatividad de la comunicación informática. Actualmente, muchos de los procesos de administración y procesamiento de información dependen de redes de telecomunicaciones, como internet o las diversas formas de intranet empresariales u organizacionales.</p>
+    </section>
+    <section id="tipos-de-redes">
+        <h2>Tipos de Redes</h2>
+        <h3>Redes según sus dimensiones</h3>
+        <ul>
+            <li><strong>Redes LAN:</strong> Red de Área Local, como las de un hogar o una oficina.</li>
+            <li><strong>Redes MAN:</strong> Red de Área Metropolitana, como las de un campus universitario.</li>
+            <li><strong>Redes WAN:</strong> Red de Área Amplia, como internet.</li>
+        </ul>
+        <h3>Redes según su medio de conexión</h3>
+        <ul>
+            <li><strong>Redes de medios guiados:</strong> Usan sistemas físicos como cables de cobre o fibra óptica.</li>
+            <li><strong>Redes de medios no guiados:</strong> Usan ondas de radio, infrarrojas o microondas.</li>
+        </ul>
+    </section>
+    <section id="modelo-osi">
+        <h2>Etapas del Modelo OSI</h2>
+        <ol>
+            <li><strong>Física:</strong> Medio físico de transmisión, como cables o ondas de radio.</li>
+            <li><strong>Enlace de datos:</strong> Transmisión confiable de datos, detección y corrección de errores.</li>
+            <li><strong>Red:</strong> Enrutamiento de datos entre dispositivos en diferentes redes.</li>
+            <li><strong>Transporte:</strong> Transferencia confiable entre puntos finales.</li>
+            <li><strong>Presentación:</strong> Traducción, compresión y cifrado de datos.</li>
+            <li><strong>Aplicación:</strong> Servicios de red para aplicaciones, como HTTP o FTP.</li>
+        </ol>
+    </section>
+    <section id="iso">
+        <h2>ISO</h2>
+        <p>
+            La Organización Internacional de Normalización es una organización para la creación de estándares internacionales compuesta por diversas organizaciones nacionales de normalización. 
+            Dado que la Organización Internacional de Normalización tendría diferentes siglas en distintos idiomas (IOS en inglés, OIN en francés por Organisation internationale de normalisation), 
+            sus fundadores decidieron darle la forma abreviada ISO. ISO procede del griego <em>isos</em>, que significa 'igual'. En todos los países, en todos los idiomas, siempre es ISO.
+        </p>
+        <p>
+            Fundada el 23 de febrero de 1947, la organización promueve el uso de estándares privativos, industriales y comerciales a nivel mundial. Su sede está en Ginebra (Suiza) y hasta 2015 trabajaba en 196 países.
+        </p>
+    </section>
+    <section id="binarios">
+        <h2>Binarios</h2>
+        <h3>1. Datos Binarios</h3>
+        <p><strong>Qué son:</strong> Representación de información en formato binario (0s y 1s).</p>
+        <p><strong>Contexto:</strong> Es la forma más básica de cualquier dato digital (texto, imágenes, videos, etc.).</p>
+        <p><strong>Ejemplo:</strong> La palabra "Hola" en binario es <code>01001000 01101111 01101100 01100001</code>.</p>
+
+        <h3>2. Segmentos Binarios (Capa de Transporte)</h3>
+        <p><strong>Qué son:</strong> Unidades de datos en la capa de transporte (capa 4 del modelo OSI).</p>
+        <p><strong>Protocolos comunes:</strong> TCP (Transmission Control Protocol) y UDP (User Datagram Protocol).</p>
+        <p><strong>Función:</strong></p>
+        <ul>
+            <li><strong>TCP:</strong> Divide los datos en segmentos confiables, añadiendo información como puertos de origen/destino, números de secuencia y checksums.</li>
+            <li><strong>UDP:</strong> Divide los datos en datagramas más simples y rápidos (sin garantía de entrega).</li>
+        </ul>
+        <p><strong>Estructura:</strong> <code>| Cabecera TCP/UDP | Datos Binarios |</code></p>
+
+        <h3>3. Paquetes Binarios (Capa de Red)</h3>
+        <p><strong>Qué son:</strong> Unidades de datos en la capa de red (capa 3 del modelo OSI).</p>
+        <p><strong>Protocolo común:</strong> IP (Internet Protocol).</p>
+        <p><strong>Función:</strong></p>
+        <ul>
+            <li>Encapsula los segmentos de la capa de transporte en paquetes.</li>
+            <li>Añade direcciones IP de origen y destino para el enrutamiento.</li>
+        </ul>
+        <p><strong>Estructura:</strong> <code>| Cabecera IP | Segmento Binario (TCP/UDP) |</code></p>
+
+        <h3>4. Tramas Binarias (Capa de Enlace de Datos)</h3>
+        <p><strong>Qué son:</strong> Unidades de datos en la capa de enlace de datos (capa 2 del modelo OSI).</p>
+        <p><strong>Protocolos comunes:</strong> Ethernet, Wi-Fi (802.11), PPP.</p>
+        <p><strong>Función:</strong></p>
+        <ul>
+            <li>Encapsula los paquetes de la capa de red en tramas.</li>
+            <li>Añade direcciones MAC (para redes locales) y mecanismos para detección de errores (como CRC).</li>
+        </ul>
+        <p><strong>Estructura:</strong> <code>| Cabecera MAC | Paquete Binario (IP) | CRC (FCS) |</code></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Redes Informáticas <br>Diego sosa
+        </p>
+    </footer>
+</body>
+</html>
